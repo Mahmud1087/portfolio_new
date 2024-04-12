@@ -1,10 +1,10 @@
+import { Navbar } from './components/main';
+
 function App() {
   return (
-    <>
-      <h1 className=' bg-black text-white font-spartan'>
-        New Portfolio Project
-      </h1>
-    </>
+    <div className='bg-gray-100 h-screen w-full'>
+      <Navbar />
+    </div>
   );
 }
 

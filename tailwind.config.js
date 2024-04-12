@@ -7,6 +7,7 @@ export default {
         serrat: 'Montserrat',
         spartan: 'League Spartan',
         lato: 'Lato',
+        jolly: 'Jolly Lodger',
       },
     },
   },
