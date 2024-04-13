@@ -8,7 +8,7 @@ import userImage from '../assets/headshot-image.jpg';
 
 const Hero = () => {
   return (
-    <div className='h-screen relative grid place-items-center'>
+    <div className='h-screen relative grid place-items-center' id='#'>
       <section className='absolute left-1/2 right-1/2 -translate-x-1/2 w-3/5 rounded-full m-auto blur-[180px] bg-gradient-to-r from-slate-300 to-red-200 h-full'></section>
       <section className='w-1/2 m-auto grid place-items-center gap-8 relative'>
         <div className='w-28 h-28 rounded-full bg-white flex justify-center items-center'>
@@ -43,12 +43,14 @@ const Hero = () => {
           <a
             className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition-all delay-75'
             href='https://www.linkedin.com/in/enesifrontenddev'
+            target='_blank'
           >
             <FaLinkedin />
           </a>
           <a
             className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition-all delay-75'
             href='https://www.github.com/Mahmud1087'
+            target='_blank'
           >
             <FaGithub />
           </a>

@@ -6,7 +6,11 @@ const Navbar = () => {
     <div className='fixed top-6 z-40 left-1/2 right-1/2 -translate-x-1/2 flex items-center justify-between w-[90%]'>
       <Logo />
       <NavLinks />
-      <button name='dark-mode-button' type='button'>
+      <button
+        name='dark-mode-button'
+        type='button'
+        className='text-xl text-gray-600'
+      >
         <FaMoon />
       </button>
     </div>
