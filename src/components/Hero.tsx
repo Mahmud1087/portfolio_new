@@ -15,7 +15,7 @@ const Hero = () => {
           <img
             src={userImage}
             alt='User image'
-            className='w-[93%] h-[93%] rounded-full'
+            className='w-[93%] h-[93%] rounded-full object-cover'
           />
         </div>
         <h1 className='text-center text-2xl px-16'>
@@ -36,7 +36,8 @@ const Hero = () => {
           </a>
           <a
             className=' bg-white rounded-full w-fit flex items-center gap-2 py-[10px] px-6 font-semibold text-gray-900 hover:scale-110 transition-all delay-75'
-            href=''
+            href='CV.pdf'
+            download={true}
           >
             Download CV <FaDownload className='text-gray-500 text-sm' />
           </a>
