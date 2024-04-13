@@ -7,6 +7,7 @@ function App() {
       <Hero />
       <HorizontalLine />
       <AboutMe />
+      <HorizontalLine />
     </div>
   );
 }
