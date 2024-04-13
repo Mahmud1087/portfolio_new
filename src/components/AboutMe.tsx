@@ -3,8 +3,8 @@ import { Title } from '../components/main';
 const AboutMe = () => {
   return (
     <div
-      className='my-20 relative flex flex-col gap-8 w-1/2 m-auto items-center text-center'
-      id='about'
+      className='my-28 relative flex flex-col gap-8 w-1/2 m-auto items-center text-center'
+      //   id='about'
     >
       <Title title='About Me' />
       <p className='text-lg'>
