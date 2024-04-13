@@ -2,7 +2,7 @@ import { navMenu } from '../data';
 
 const NavLinks = () => {
   return (
-    <ul className='flex gap-12 font-serrat text-[13px] font-semibold text-gray-700 bg-white rounded-full py-3 px-7'>
+    <ul className='flex gap-14 items-center font-spartan bg-white backdrop-filter backdrop-blur-[120px] bg-opacity-60 rounded-full py-3 px-7 tracking-wider'>
       {navMenu.map((menu) => {
         const { id, title, link } = menu;
         return (
