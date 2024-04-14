@@ -1,12 +1,28 @@
+import { useRef } from 'react';
 import { projectsData } from '../libs/data';
+import { useScroll, useTransform, motion } from 'framer-motion';
 
 type ProjectProps = (typeof projectsData)[number];
 
 const SingleProject = (project: ProjectProps) => {
   const { projectName, description, imageUrl, stackUsed, url } = project;
 
+  const ref = useRef<HTMLAnchorElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['0 1', '0.85 1'],
+  });
+
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.75, 1]);
+
   return (
-    <a
+    <motion.a
+      ref={ref}
+      style={{
+        scale: scaleProgress,
+        opacity: opacityProgress,
+      }}
       href={url}
       target='_blank'
       className='group even:flex-row-reverse flex relative w-full h-80 bg-gray-200 rounded-xl border border-black/10 shadow-lg shadow-black/15 overflow-hidden hover:bg-gray-300 transition'
@@ -34,7 +50,7 @@ const SingleProject = (project: ProjectProps) => {
           className='absolute w-full shadow-2xl shadow-black h-full top-6 -right-7 object-cover rounded-xl group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-3 group-hover:scale-[1.03] transition group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-3 group-even:group-hover:scale-[1.03 group-even:-left-7'
         />
       </div>
-    </a>
+    </motion.a>
   );
 };
 export default SingleProject;
