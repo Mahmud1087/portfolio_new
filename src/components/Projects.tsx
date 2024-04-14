@@ -4,7 +4,7 @@ import { projectsData } from '../libs/data';
 import { useScrollView } from '../libs/hooks';
 
 const Projects = () => {
-  const { ref } = useScrollView('Projects', 0.75);
+  const { ref } = useScrollView('Projects', 0.1);
 
   return (
     <section
@@ -13,7 +13,7 @@ const Projects = () => {
       id='projects'
     >
       <Title title='Projects' />
-      <div>
+      <div className='flex flex-col gap-10'>
         {projectsData.map((project, i) => {
           return (
             <React.Fragment key={i}>
