@@ -33,7 +33,7 @@ const NavLinks = () => {
                   stiffness: 380,
                   damping: 30,
                 }}
-                className='absolute inset-0 bg-gray-100 -z-10 rounded-full'
+                className='absolute inset-0 bg-gray-200 -z-10 rounded-full'
               ></motion.span>
             )}
           </li>
