@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <div
       ref={ref}
-      className='my-28 scroll-mt-28 relative flex flex-col gap-8 w-1/2 m-auto items-center text-center'
+      className='scroll-mt-28 relative flex flex-col gap-8 w-1/2 m-auto items-center text-center'
       id='about'
     >
       <Title title='About Me' />

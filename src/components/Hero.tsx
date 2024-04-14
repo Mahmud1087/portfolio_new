@@ -11,7 +11,11 @@ const Hero = () => {
   const { ref } = useScrollView('Home', 0.5);
 
   return (
-    <div ref={ref} className='h-screen relative grid place-items-center' id='#'>
+    <div
+      ref={ref}
+      className='mt-40 h-fit relative grid place-items-center'
+      id='#'
+    >
       <section className='absolute left-1/2 right-1/2 -translate-x-1/2 w-3/5 rounded-full m-auto blur-[180px] bg-gradient-to-r from-slate-300 to-red-200 h-full'></section>
       <section className='w-1/2 m-auto grid place-items-center gap-8 relative'>
         <div className='w-28 h-28 rounded-full bg-white flex justify-center items-center'>

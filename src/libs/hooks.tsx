@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 export const useScrollView = (
   sectionName: SectionNameType,
-  threshold = 0.75
+  threshold = 0.85
 ) => {
   const { ref, inView } = useInView({
     threshold,
