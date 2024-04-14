@@ -6,6 +6,7 @@ import HorizontalLine from './HorizontalLine';
 import AboutMe from './AboutMe';
 import Title from './Title';
 import Projects from './Projects';
+import SingleProject from './SingleProject';
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   AboutMe,
   Title,
   Projects,
+  SingleProject,
 };
