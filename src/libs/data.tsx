@@ -18,6 +18,7 @@ export const projectsData = [
       'A fully responsive landing page for a logistics company (TransitFlow)',
     stackUsed: ['React', 'TailwindCSS', 'Figma'],
     imageUrl: projectImg1,
+    url: 'https://transit-flow-logistics.netlify.app',
   },
   {
     projectName: 'Audiophile E-commerce',
@@ -25,6 +26,7 @@ export const projectsData = [
       'A fully responsive and functional e-commerce website for a company that sells hadphones, earphones, and speakers',
     stackUsed: ['React', 'TailwindCSS', 'Framer Motion', 'Figma'],
     imageUrl: projectImg2,
+    url: 'https://audiophile-estore.netlify.app',
   },
   {
     projectName: 'Crappo Cryptocurrency',
@@ -32,6 +34,7 @@ export const projectsData = [
       'A fully responsive landing page for a crypto currency website.',
     stackUsed: ['HTML', 'CSS', 'JavaScript'],
     imageUrl: projectImg3,
+    url: 'https://crappo-crypto-page.netlify.app',
   },
   {
     projectName: 'FoodEx Restaurant',
@@ -39,5 +42,6 @@ export const projectsData = [
       'A fully responsive static landing page for a restaurant (foodex). Users can view the restaurant menu, chefs, and also blog post uploaded by the restaurant',
     stackUsed: ['HTML', 'CSS', 'JavaScript'],
     imageUrl: projectImg4,
+    url: 'https://foodex-restaurant.netlify.app',
   },
 ];
