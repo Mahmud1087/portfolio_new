@@ -1,10 +1,11 @@
-import { useState } from 'react';
-import { navMenu } from '../data';
+import { navMenu } from '../libs/data';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
+import { useActiveSectionContext } from '../context/avtive-section-context';
 
 const NavLinks = () => {
-  const [activeSection, setActiveSection] = useState('Home');
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
 
   return (
     <ul className='flex gap-12 items-center font-spartan bg-white backdrop-filter backdrop-blur-[10px] bg-opacity-80 rounded-full py-[10px] px-7 tracking-wider '>
@@ -17,7 +18,10 @@ const NavLinks = () => {
               className={clsx('text-gray-500 transition hover:text-gray-950', {
                 'text-gray-950': activeSection === title,
               })}
-              onClick={() => setActiveSection(title)}
+              onClick={() => {
+                setActiveSection(title);
+                setTimeOfLastClick(Date.now());
+              }}
             >
               {title}
             </a>
