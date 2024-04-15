@@ -18,7 +18,10 @@ const DarkModeContextProvider = ({
 }: DarkModeContextProviderProps) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle('dark');
+  };
 
   return (
     <DarkModeContext.Provider

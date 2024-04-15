@@ -11,7 +11,7 @@ import DarkModeContextProvider from './context/dark-mode-context';
 
 function App() {
   return (
-    <div className='bg-gray-100 h-full w-full grid place-items-center'>
+    <div className='bg-gray-100 dark:bg-gray-800 h-full w-full grid place-items-center'>
       <ActiveSectionProvider>
         <DarkModeContextProvider>
           <Navbar />
