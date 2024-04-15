@@ -1,6 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { Theme } from '../libs/types';
 
 type DarkModeContextProps = {
   theme: string;
@@ -11,6 +10,8 @@ type DarkModeContextProps = {
 type ChildrenType = {
   children: React.ReactNode;
 };
+
+type Theme = 'light' | 'dark';
 
 const DarkModeContext = createContext<DarkModeContextProps | null>(null);
 
