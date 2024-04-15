@@ -25,17 +25,19 @@ const SingleProject = (project: ProjectProps) => {
       }}
       href={url}
       target='_blank'
-      className='group even:flex-row-reverse flex relative w-full h-80 bg-gray-200 rounded-xl border border-black/10 shadow-lg shadow-black/15 overflow-hidden hover:bg-gray-300 transition'
+      className='group even:flex-row-reverse flex relative w-full h-80 bg-gray-200 rounded-xl border border-black/10 shadow-lg shadow-black/15 overflow-hidden hover:bg-gray-300 transition-all dark:bg-white/10 dark:hover:bg-white/20'
     >
       <div className='w-1/2 h-full flex flex-col text-start pl-8 pt-10 pr-8'>
-        <h1 className='text-2xl font-semibold mb-5'>{projectName}</h1>
-        <p className=' font-lato'>{description}</p>
+        <h1 className='text-2xl font-semibold mb-5 dark:font-normal dark:text-white'>
+          {projectName}
+        </h1>
+        <p className=' dark:font-[200] dark:text-white/85'>{description}</p>
         <div className='mt-auto mb-12 flex gap-x-1 gap-y-2 flex-wrap'>
           {stackUsed.map((stack, i) => {
             return (
               <aside
                 key={i}
-                className='bg-gray-800 text-gray-50 font-serrat text-xs rounded-full px-3 py-1 border border-gray-200/30 shadow-lg shadow-black/50'
+                className='bg-gray-800 text-gray-50 font-serrat text-xs rounded-full px-3 py-1 border border-gray-200/30 shadow-lg shadow-black/50 dark:bg-gray-900 dark:border-none'
               >
                 {stack}
               </aside>
