@@ -1,34 +1,55 @@
 /* eslint-disable react-refresh/only-export-components */
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
+import { Theme } from '../libs/types';
 
-type DarkModeContextTypes = {
-  isDarkMode: boolean;
-  setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-  toggleDarkMode: () => void;
+type DarkModeContextProps = {
+  theme: string;
+  setTheme: React.Dispatch<React.SetStateAction<Theme>>;
+  toggleTheme: () => void;
 };
 
-type DarkModeContextProviderProps = {
+type ChildrenType = {
   children: React.ReactNode;
 };
 
-const DarkModeContext = createContext<DarkModeContextTypes | null>(null);
+const DarkModeContext = createContext<DarkModeContextProps | null>(null);
 
-const DarkModeContextProvider = ({
-  children,
-}: DarkModeContextProviderProps) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+const DarkModeContextProvider = ({ children }: ChildrenType) => {
+  const [theme, setTheme] = useState<Theme>('light');
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle('dark');
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+      localStorage.setItem('theme', 'dark');
+      document.documentElement.classList.add('dark');
+    } else {
+      setTheme('light');
+      localStorage.setItem('theme', 'light');
+      document.documentElement.classList.remove('dark');
+    }
   };
+
+  useEffect(() => {
+    const localTheme = localStorage.getItem('theme') as Theme | null;
+
+    if (localTheme) {
+      setTheme(localTheme);
+
+      if (localTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else if (matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+        setTheme('dark');
+      }
+    }
+  }, []);
 
   return (
     <DarkModeContext.Provider
       value={{
-        isDarkMode,
-        setIsDarkMode,
-        toggleDarkMode,
+        theme,
+        setTheme,
+        toggleTheme,
       }}
     >
       {children}

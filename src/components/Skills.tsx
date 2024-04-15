@@ -23,7 +23,7 @@ const Skills = () => {
     <section
       id='skills'
       ref={ref}
-      className='w-1/2 flex flex-col gap-8 text-center'
+      className='w-1/2 flex flex-col gap-8 text-center scroll-mt-28'
     >
       <Title title='Skills' />
       <div className='flex justify-center gap-4 flex-wrap'>
