@@ -26,12 +26,12 @@ const Skills = () => {
       className='w-1/2 flex flex-col gap-8 text-center scroll-mt-28'
     >
       <Title title='Skills' />
-      <div className='flex justify-center gap-4 flex-wrap'>
+      <div className='flex justify-center gap-2 flex-wrap'>
         {skillsData.map((skill, i) => {
           return (
             <motion.div
               key={i}
-              className='bg-white px-4 py-1 border border-black/[0.1] shadow-lg shadow-black/15 rounded-lg'
+              className='bg-white px-4 py-1 border border-black/[0.1] shadow-lg shadow-black/15 rounded-md dark:bg-white/10 dark:font-[300] dark:text-white'
               variants={fadeInAnimationVariants}
               initial='initial'
               whileInView='animate'
