@@ -1,7 +1,10 @@
 import { FaMoon } from 'react-icons/fa6';
 import { Logo, NavLinks } from '../components/main';
+import { useDarkModeCotext } from '../context/dark-mode-context';
+import { MdLightMode } from 'react-icons/md';
 
 const Navbar = () => {
+  const { isDarkMode, toggleDarkMode } = useDarkModeCotext();
   return (
     <div className='fixed top-6 z-40 left-1/2 right-1/2 -translate-x-1/2 flex items-center justify-between w-[90%]'>
       <Logo />
@@ -9,9 +12,10 @@ const Navbar = () => {
       <button
         name='dark-mode-button'
         type='button'
-        className='text-xl text-gray-600'
+        className='text-xl text-gray-600 outline-none transition'
+        onClick={toggleDarkMode}
       >
-        <FaMoon />
+        {isDarkMode ? <MdLightMode className='text-gray-400' /> : <FaMoon />}
       </button>
     </div>
   );
