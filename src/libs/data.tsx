@@ -44,4 +44,16 @@ export const projectsData = [
     imageUrl: projectImg4,
     url: 'https://foodex-restaurant.netlify.app',
   },
-];
+] as const;
+
+export const skillsData = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'Tailwind',
+  'Framer Motion',
+  'React',
+  'TypeScript',
+  'Figma',
+  'Bootstrap',
+] as const;
