@@ -8,16 +8,19 @@ const NavLinks = () => {
     useActiveSectionContext();
 
   return (
-    <ul className='flex gap-12 items-center font-spartan bg-white backdrop-filter backdrop-blur-[10px] bg-opacity-80 rounded-full py-[10px] px-7 tracking-wider '>
+    <ul className='flex gap-12 items-center font-spartan bg-white backdrop-filter backdrop-blur-[10px] bg-opacity-80 rounded-full py-[10px] px-7 tracking-wider border border-black/10 shadow-lg shadow-black/10 dark:bg-gray-950 dark:bg-opacity-80'>
       {navMenu.map((menu) => {
         const { id, title, link } = menu;
         return (
           <li key={id} className='relative px-[10px] py-[2px]'>
             <a
               href={link}
-              className={clsx('text-gray-500 transition hover:text-gray-950', {
-                'text-gray-950': activeSection === title,
-              })}
+              className={clsx(
+                'text-gray-500 transition-all hover:text-gray-950 dark:text-white/70 dark:font-[250] dark:hover:text-white',
+                {
+                  'text-gray-950 dark:text-white/100': activeSection === title,
+                }
+              )}
               onClick={() => {
                 setActiveSection(title);
                 setTimeOfLastClick(Date.now());
@@ -33,7 +36,7 @@ const NavLinks = () => {
                   stiffness: 380,
                   damping: 30,
                 }}
-                className='absolute inset-0 bg-gray-200 -z-10 rounded-full'
+                className='absolute inset-0 bg-gray-200 -z-10 rounded-full dark:bg-gray-800'
               ></motion.span>
             )}
           </li>
