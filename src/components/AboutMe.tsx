@@ -11,21 +11,32 @@ const AboutMe = () => {
       id='about'
     >
       <Title title='About Me' />
-      <p className='text-lg'>
+      <p className='text-lg dark:text-white/70 dark:font-[200]'>
         After graduating with a degree in{' '}
-        <span className='font-semibold'>accounting</span>, I decided to pursue
-        my passion for programming. I enrolled in a coding bootcamp and learned{' '}
-        <span className='font-semibold'>frontend web development</span>. My{' '}
-        <i>favorite part of programming</i> is the problem solving aspect. I
-        love the feeling of finally figuring out a solution to a problem. My
+        <span className='font-semibold dark:font-normal dark:text-white'>
+          accounting
+        </span>
+        , I decided to pursue my passion for programming. I enrolled in a coding
+        bootcamp and learned{' '}
+        <span className='font-semibold dark:font-normal dark:text-white'>
+          frontend web development
+        </span>
+        . My <i>favorite part of programming</i> is the problem solving aspect.
+        I love the feeling of finally figuring out a solution to a problem. My
         core stack is{' '}
-        <span className='font-semibold'>React, and TypeScript</span>. I am
-        currently looking for an internship or junior frontend developer roles.
+        <span className='font-semibold dark:font-normal dark:text-white'>
+          React, and TypeScript
+        </span>
+        . I am currently looking for an internship or junior frontend developer
+        roles.
         <br />
         <br />
         When I'm not coding, I enjoy reading books, watching movies, and
         watching football. I also{' '}
-        <span className='font-semibold'>enjoy learning new things</span>.
+        <span className='font-semibold dark:font-normal dark:text-white'>
+          enjoy learning new things
+        </span>
+        .
       </p>
       {/* <p className='text-lg'>
         Hello! I am Abdulazeez Mahmud Enesi, a passionate junior front-end
