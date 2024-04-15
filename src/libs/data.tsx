@@ -56,5 +56,5 @@ export const skillsData = [
   'TypeScript',
   'Figma',
   'Bootstrap',
-  'git',
+  'Git/Github',
 ] as const;
