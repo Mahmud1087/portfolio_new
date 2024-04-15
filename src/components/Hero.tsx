@@ -6,9 +6,11 @@ import {
 } from 'react-icons/fa6';
 import userImage from '../assets/headshot-image.jpg';
 import { useScrollView } from '../libs/hooks';
+import { useActiveSectionContext } from '../context/avtive-section-context';
 
 const Hero = () => {
   const { ref } = useScrollView('Home', 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <div
@@ -41,6 +43,10 @@ const Hero = () => {
           <a
             className='group bg-gray-950 rounded-full w-fit flex items-center gap-4 py-[10px] px-6 text-gray-50 hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105'
             href='#contact'
+            onClick={() => {
+              setActiveSection('Contact');
+              setTimeOfLastClick(Date.now());
+            }}
           >
             Contact me here{' '}
             <FaArrowRightLong className='text-white/50 group-hover:translate-x-1' />
