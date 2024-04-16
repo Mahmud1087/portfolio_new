@@ -53,7 +53,7 @@ const Hero = () => {
           </a>
           <a
             className='group bg-white rounded-full w-fit flex items-center gap-3 py-[10px] px-6 font-semibold text-gray-900 hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white dark:font-[400]'
-            href='CV2.pdf'
+            href='CV.pdf'
             download={true}
           >
             Download CV{' '}
