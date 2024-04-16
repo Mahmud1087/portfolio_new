@@ -11,7 +11,7 @@ const Navbar = () => {
       initial={{ x: '-50%', y: -1000, opacity: 0 }}
       animate={{ x: '-50%', y: 0, opacity: 1 }}
       transition={{
-        duration: 0.1,
+        duration: 0.3,
       }}
       className='fixed top-6 z-40 left-1/2 right-1/2 -translate-x-1/2 flex items-center justify-between w-[90%]'
     >
