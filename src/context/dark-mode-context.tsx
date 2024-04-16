@@ -2,7 +2,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 type DarkModeContextProps = {
-  theme: string;
+  theme: Theme;
   setTheme: React.Dispatch<React.SetStateAction<Theme>>;
   toggleTheme: () => void;
 };
@@ -21,27 +21,27 @@ const DarkModeContextProvider = ({ children }: ChildrenType) => {
   const toggleTheme = () => {
     if (theme === 'light') {
       setTheme('dark');
-      localStorage.setItem('theme', 'dark');
+      window.localStorage.setItem('theme', 'dark');
       document.documentElement.classList.add('dark');
     } else {
       setTheme('light');
-      localStorage.setItem('theme', 'light');
+      window.localStorage.setItem('theme', 'light');
       document.documentElement.classList.remove('dark');
     }
   };
 
   useEffect(() => {
-    const localTheme = localStorage.getItem('theme') as Theme | null;
+    const localTheme = window.localStorage.getItem('theme') as Theme | null;
 
     if (localTheme) {
       setTheme(localTheme);
 
       if (localTheme === 'dark') {
         document.documentElement.classList.add('dark');
-      } else if (matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.classList.add('dark');
-        setTheme('dark');
       }
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
+      document.documentElement.classList.add('dark');
     }
   }, []);
 
