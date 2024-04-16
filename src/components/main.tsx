@@ -8,6 +8,7 @@ import Title from './Title';
 import Projects from './Projects';
 import SingleProject from './SingleProject';
 import Skills from './Skills';
+import ContactMe from './ContactMe';
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   Projects,
   SingleProject,
   Skills,
+  ContactMe,
 };

@@ -1,5 +1,6 @@
 import {
   AboutMe,
+  ContactMe,
   Hero,
   HorizontalLine,
   Navbar,
@@ -22,6 +23,8 @@ function App() {
           <Projects />
           <HorizontalLine />
           <Skills />
+          <HorizontalLine />
+          <ContactMe />
         </DarkModeContextProvider>
       </ActiveSectionProvider>
     </div>
