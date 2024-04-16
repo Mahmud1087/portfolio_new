@@ -4,7 +4,7 @@ import { useScrollView } from '../libs/hooks';
 import { motion } from 'framer-motion';
 
 const Skills = () => {
-  const { ref } = useScrollView('Skills', 0.1);
+  const { ref } = useScrollView('Skills', 0.5);
   const fadeInAnimationVariants = {
     initial: {
       opacity: 0,
