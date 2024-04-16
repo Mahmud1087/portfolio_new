@@ -1,11 +1,17 @@
 import { Title } from '../components/main';
 import { useScrollView } from '../libs/hooks';
+import { motion } from 'framer-motion';
 
 const AboutMe = () => {
   const { ref } = useScrollView('About');
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.3,
+      }}
       ref={ref}
       className='scroll-mt-28 relative flex flex-col gap-8 w-1/2 m-auto items-center text-center'
       id='about'
@@ -53,7 +59,7 @@ const AboutMe = () => {
         internships, junior frontend roles, and also collaborating on web
         development projects.
       </p> */}
-    </div>
+    </motion.div>
   );
 };
 export default AboutMe;
