@@ -1,6 +1,7 @@
 import { useScrollView } from '../libs/hooks';
 import { Title } from '../components/main';
 import { FaPaperPlane } from 'react-icons/fa6';
+import { motion } from 'framer-motion';
 
 const ContactMe = () => {
   const { ref } = useScrollView('Contact');
@@ -20,7 +21,12 @@ const ContactMe = () => {
         or through this form.
       </p>
 
-      <form
+      <motion.form
+        initial={{ opacity: 0.2 }}
+        whileInView={{ opacity: 1 }}
+        transition={{
+          delay: 0.5,
+        }}
         onSubmit={handleSubmit}
         className='mt-10 flex flex-col mx-auto w-[min(100%,60%)]'
       >
@@ -61,7 +67,7 @@ const ContactMe = () => {
           submit{' '}
           <FaPaperPlane className='text-sm text-white/60 group-hover:-translate-y-1 transition-all' />
         </button>
-      </form>
+      </motion.form>
     </div>
   );
 };
