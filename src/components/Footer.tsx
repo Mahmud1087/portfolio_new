@@ -17,14 +17,14 @@ const Footer = () => {
         </a>
         <a
           className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
-          href='https://www.linkedin.com/in/enesifrontenddev'
+          href='https://twitter.com/MahmudEnesi'
           target='_blank'
         >
           <FaTwitter />
         </a>
         <a
           className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
-          href='https://www.linkedin.com/in/enesifrontenddev'
+          href='https://www.github.com/Mahmud1087'
           target='_blank'
         >
           <FaGithub />
