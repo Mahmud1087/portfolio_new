@@ -23,10 +23,10 @@ const Skills = () => {
     <section
       id='skills'
       ref={ref}
-      className='w-1/2 flex flex-col gap-8 text-center scroll-mt-28'
+      className='w-[90%] flex flex-col gap-8 text-center scroll-mt-28 sm:w-[70%] lg:w-1/2'
     >
       <Title title='Skills' />
-      <div className='flex justify-center gap-2 flex-wrap'>
+      <div className='flex justify-center gap-3 flex-wrap'>
         {skillsData.map((skill, i) => {
           return (
             <motion.div
