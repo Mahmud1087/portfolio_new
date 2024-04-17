@@ -19,8 +19,8 @@ const Hero = () => {
       className='scroll-mt-40 pt-40 h-fit relative grid place-items-center'
       id='#'
     >
-      <section className='absolute left-1/2 right-1/2 -translate-x-1/2 w-3/5 rounded-full m-auto blur-[180px] bg-gradient-to-r from-slate-300 to-red-400/80 h-full dark:from-slate-600 dark:to-red-400/70'></section>
-      <section className='w-1/2 m-auto grid place-items-center gap-8 relative'>
+      <section className='absolute left-1/2 right-1/2 -translate-x-1/2 w-full rounded-full m-auto blur-[180px] bg-gradient-to-r from-slate-300 to-red-400/80 h-full dark:from-slate-600 dark:to-red-400/70 lg:w-3/5'></section>
+      <section className='w-[90%] m-auto grid place-items-center gap-8 relative sm:w-3/4 lg:w-1/2'>
         <motion.div
           initial={{ scale: 0.2 }}
           animate={{ scale: 1 }}
@@ -44,7 +44,7 @@ const Hero = () => {
           }}
           className='mt-2 flex flex-col gap-10 items-center'
         >
-          <h1 className='text-center text-2xl px-16 dark:text-white/90 dark:font-[200]'>
+          <h1 className='text-center text-2xl px-5 dark:text-white/90 dark:font-[200] sm:px-16'>
             Hello,{' '}
             <span className='font-semibold dark:font-normal'>
               I'm Mahmud Abdulazeez
@@ -56,7 +56,7 @@ const Hero = () => {
             I enjoy building <i>responsive and interactive</i> websites. My
             focus is <u>React</u>
           </h1>
-          <aside className='flex gap-4 items-center'>
+          <aside className='flex flex-col gap-4 items-center sm:flex-row'>
             <a
               className='group bg-gray-950 rounded-full w-fit flex items-center gap-4 py-[10px] px-6 text-gray-50 hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105'
               href='#contact'
@@ -76,20 +76,22 @@ const Hero = () => {
               Download CV{' '}
               <FaDownload className='group-hover:translate-y-[1.5px] text-gray-500 text-sm transition-all dark:text-gray-900' />
             </a>
-            <a
-              className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
-              href='https://www.linkedin.com/in/enesifrontenddev'
-              target='_blank'
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
-              href='https://www.github.com/Mahmud1087'
-              target='_blank'
-            >
-              <FaGithub />
-            </a>
+            <div className='flex gap-4 mt-4 sm:mt-0'>
+              <a
+                className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
+                href='https://www.linkedin.com/in/enesifrontenddev'
+                target='_blank'
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
+                href='https://www.github.com/Mahmud1087'
+                target='_blank'
+              >
+                <FaGithub />
+              </a>
+            </div>
           </aside>
         </motion.div>
       </section>
