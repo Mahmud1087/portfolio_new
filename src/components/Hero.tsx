@@ -4,7 +4,10 @@ import {
   FaGithub,
   FaLinkedin,
 } from 'react-icons/fa6';
-import userImage from '../assets/headshot-image.jpg';
+// import userImage from '../assets/headshot-image.jpg';
+// import userImage from '../assets/image4.jpg';
+import userImage from '../assets/img.jpg';
+// import userImage from '../assets/image3.jpg';
 import { useScrollView } from '../libs/hooks';
 import { useActiveSectionContext } from '../context/avtive-section-context';
 import { motion } from 'framer-motion';
@@ -27,7 +30,7 @@ const Hero = () => {
           transition={{
             duration: 0.3,
           }}
-          className='w-28 h-28 rounded-full bg-white flex justify-center items-center shadow-2xl shadow-black/70 dark:bg-gray-950/70 dark:shadow-black'
+          className='w-32 h-32 rounded-full bg-white flex justify-center items-center shadow-2xl shadow-black/70 dark:bg-gray-950/70 dark:shadow-black'
         >
           <img
             src={userImage}
