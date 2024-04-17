@@ -2,6 +2,10 @@ import projectImg1 from '../assets/logistics.png';
 import projectImg2 from '../assets/audiophile.png';
 import projectImg3 from '../assets/crappo.png';
 import projectImg4 from '../assets/foodex.png';
+import compressedImg1 from '../assets/compressed/audiophile.jpg';
+import compressedImg2 from '../assets/compressed/crappo.jpg';
+import compressedImg3 from '../assets/compressed/foodex.jpg';
+import compressedImg4 from '../assets/compressed/logisticsBlur.jpg';
 
 export const navMenu = [
   { id: 1, title: 'Home', link: '#' },
@@ -19,6 +23,7 @@ export const projectsData = [
     stackUsed: ['React', 'TailwindCSS', 'Figma'],
     imageUrl: projectImg1,
     url: 'https://transit-flow-logistics.netlify.app',
+    compressedImg: compressedImg1,
   },
   {
     projectName: 'Audiophile E-commerce',
@@ -27,6 +32,7 @@ export const projectsData = [
     stackUsed: ['React', 'TailwindCSS', 'Framer Motion', 'Figma'],
     imageUrl: projectImg2,
     url: 'https://audiophile-estore.netlify.app',
+    compressedImg: compressedImg2,
   },
   {
     projectName: 'Crappo Cryptocurrency',
@@ -35,6 +41,7 @@ export const projectsData = [
     stackUsed: ['HTML', 'CSS', 'JavaScript'],
     imageUrl: projectImg3,
     url: 'https://crappo-crypto-page.netlify.app',
+    compressedImg: compressedImg3,
   },
   {
     projectName: 'FoodEx Restaurant',
@@ -43,6 +50,7 @@ export const projectsData = [
     stackUsed: ['HTML', 'CSS', 'JavaScript'],
     imageUrl: projectImg4,
     url: 'https://foodex-restaurant.netlify.app',
+    compressedImg: compressedImg4,
   },
 ] as const;
 

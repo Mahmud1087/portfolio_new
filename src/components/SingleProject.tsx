@@ -1,11 +1,14 @@
 import { useRef } from 'react';
 import { projectsData } from '../libs/data';
 import { useScroll, useTransform, motion } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 type ProjectProps = (typeof projectsData)[number];
 
 const SingleProject = (project: ProjectProps) => {
-  const { projectName, description, imageUrl, stackUsed, url } = project;
+  const { projectName, description, imageUrl, stackUsed, url, compressedImg } =
+    project;
 
   const ref = useRef<HTMLAnchorElement>(null);
   const { scrollYProgress } = useScroll({
@@ -48,7 +51,15 @@ const SingleProject = (project: ProjectProps) => {
         </div>
       </div>
       <div className='relative w-full h-56 p-3 sm:p-0 sm:h-full sm:w-1/2'>
-        <img
+        <LazyLoadImage
+          placeholderSrc={compressedImg}
+          wrapperProps={{
+            style: {
+              width: '100%',
+              height: '100%',
+              borderRadius: 'inherit',
+            },
+          }}
           src={imageUrl}
           alt='Project Image Screenshot'
           className='relative w-full shadow-lg shadow-black/40 h-full object-cover rounded-xl

@@ -7,10 +7,13 @@ import {
 // import userImage from '../assets/headshot-image.jpg';
 // import userImage from '../assets/image4.jpg';
 import userImage from '../assets/img.jpg';
+import userImageCompressed from '../assets/compressed/img.jpg';
 // import userImage from '../assets/image3.jpg';
 import { useScrollView } from '../libs/hooks';
 import { useActiveSectionContext } from '../context/avtive-section-context';
 import { motion } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Hero = () => {
   const { ref } = useScrollView('Home', 0.5);
@@ -32,7 +35,15 @@ const Hero = () => {
           }}
           className='w-32 h-32 rounded-full bg-white flex justify-center items-center shadow-2xl shadow-black/70 dark:bg-gray-950/70 dark:shadow-black'
         >
-          <img
+          <LazyLoadImage
+            placeholderSrc={userImageCompressed}
+            effect='blur'
+            wrapperProps={{
+              style: {
+                width: '100%',
+                height: '100%',
+              },
+            }}
             src={userImage}
             alt='User image'
             className='w-[93%] h-[93%] rounded-full object-cover'
