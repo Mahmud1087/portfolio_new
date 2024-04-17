@@ -1,12 +1,7 @@
 import emailjs from '@emailjs/browser';
+import { UserDetailsType } from './types';
 
-type SendCustomEmailProps = {
-  name: string;
-  email: string;
-  message: string;
-};
-
-const sendCustomEmail = (details: SendCustomEmailProps) => {
+const sendCustomEmail = (details: UserDetailsType) => {
   emailjs.init(import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
   emailjs
     .send(
