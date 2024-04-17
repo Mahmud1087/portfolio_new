@@ -18,20 +18,22 @@ const AboutMe = () => {
     >
       <Title title='About Me' />
       <p className='text-lg dark:text-white/70 dark:font-[200] sm:px-6 lg:px-0 '>
-        After graduating with a degree in{' '}
-        <span className='font-semibold dark:font-normal dark:text-white'>
-          accounting
-        </span>
-        , I decided to pursue my passion for programming. I enrolled in a coding
-        bootcamp and learned{' '}
+        I embarked on my tech journey in 2022 when all universities was on
+        strike which lasted for months. Instead of staying idle, I decided to
+        pursue my passion for programming. I enrolled in online courses and
+        bootcamps in{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
           frontend web development
         </span>
-        . My <i>favorite part of programming</i> is the problem solving aspect.
-        I love the feeling of finally figuring out a solution to a problem. My
-        core stack is{' '}
+        . I hold a bachelors degree in{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
-          React, and TypeScript
+          Metallurgical and Materials Engineering.
+        </span>
+        <br />
+        My <i>favorite part of programming</i> is the problem solving aspect. My
+        core stack{' '}
+        <span className='font-semibold dark:font-normal dark:text-white'>
+          React and TypeScript
         </span>
         . I am currently looking for an internship or junior frontend developer
         roles.
@@ -40,7 +42,7 @@ const AboutMe = () => {
         When I'm not coding, I enjoy reading books, watching movies, and
         watching football. I also{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
-          enjoy learning new things
+          enjoy learning new things and staying up to date with new technologies
         </span>
         .
       </p>
