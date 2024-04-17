@@ -2,17 +2,17 @@ import { FaMoon } from 'react-icons/fa6';
 import { Logo, NavLinks } from '../components/main';
 import { useDarkModeCotext } from '../context/dark-mode-context';
 import { MdLightMode } from 'react-icons/md';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const { theme, toggleTheme } = useDarkModeCotext();
   return (
-    <motion.nav
-      initial={{ x: '-50%', y: -1000, opacity: 0 }}
-      animate={{ x: '-50%', y: 0, opacity: 1 }}
-      transition={{
-        duration: 0.3,
-      }}
+    <nav
+      // initial={{ x: '-50%', y: -1000, opacity: 0 }}
+      // animate={{ x: '-50%', y: 0, opacity: 1 }}
+      // // transition={{
+      // //   duration: 0.3,
+      // // }}
       className='fixed top-6 z-40 left-1/2 right-1/2 -translate-x-1/2 flex items-center justify-between w-[90%]'
     >
       <Logo />
@@ -25,7 +25,7 @@ const Navbar = () => {
       >
         {theme === 'light' ? <MdLightMode /> : <FaMoon />}
       </button>
-    </motion.nav>
+    </nav>
   );
 };
 export default Navbar;

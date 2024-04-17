@@ -2,11 +2,12 @@ import { useScrollView } from '../libs/hooks';
 import { Title } from '../components/main';
 import { FaPaperPlane } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
+import { FormEvent } from 'react';
 
 const ContactMe = () => {
-  const { ref } = useScrollView('Contact');
+  const { ref } = useScrollView('Contact', 0.5);
 
-  const handleSubmit = (e: Event) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
 
