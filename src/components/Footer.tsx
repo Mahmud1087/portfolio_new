@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className='mt-52 mb-10 text-center dark:text-white/70 dark:font-[200]'>
       <p>&copy; 2024 Mahmud Abdulazeez. All rights reserved.</p>
-      <p>
+      <p className='font-semibold mt-5'>
         Built with React, Typescript, Tailwind CSS, Framer Motion, and EmailJs
       </p>
       <section className='mt-12 flex justify-center items-center gap-8'>

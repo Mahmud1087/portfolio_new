@@ -51,7 +51,11 @@ const ContactMe = () => {
   const [details, setDetails] = useState(userDetails);
 
   return (
-    <div ref={ref} className='w-1/2 scroll-mt-28' id='contact'>
+    <div
+      ref={ref}
+      className='w-[90%] scroll-mt-28 sm:w-3/4 lg:w-1/2'
+      id='contact'
+    >
       <ToastContainer />
       <Title title='Contact Me' />
       <p className='text-center mt-4 text-lg dark:text-white/70 dark:font-[200]'>
@@ -69,7 +73,7 @@ const ContactMe = () => {
           delay: 0.5,
         }}
         onSubmit={handleSubmit}
-        className='mt-10 flex flex-col mx-auto w-[min(100%,60%)]'
+        className='mt-10 flex flex-col mx-auto w-[min(100%,38rem)]'
       >
         <label
           htmlFor='name'
