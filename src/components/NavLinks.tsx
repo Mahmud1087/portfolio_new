@@ -8,7 +8,7 @@ const NavLinks = () => {
     useActiveSectionContext();
 
   return (
-    <ul className='flex gap-12 items-center font-spartan bg-white backdrop-filter backdrop-blur-[10px] bg-opacity-80 rounded-full py-[10px] px-7 tracking-wider border border-black/10 shadow-lg shadow-black/10 dark:bg-gray-950 dark:bg-opacity-80'>
+    <ul className='flex gap-5 gap-y-2 justify-center items-center font-spartan bg-white backdrop-filter backdrop-blur-[10px] bg-opacity-80 py-[10px] px-5 tracking-wider border border-black/10 shadow-lg shadow-black/10 dark:bg-gray-950 dark:bg-opacity-80 w-full flex-wrap sm:rounded-full sm:gap-12 sm:gap-y-0 sm:justify-start sm:px-7 sm:py-[10px] sm:flex-nowrap sm:w-fit'>
       {navMenu.map((menu) => {
         const { id, title, link } = menu;
         return (

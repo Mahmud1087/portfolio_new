@@ -1,4 +1,3 @@
-import { FaArrowUp } from 'react-icons/fa6';
 import {
   AboutMe,
   ContactMe,
@@ -11,7 +10,6 @@ import {
 } from './components/main';
 import ActiveSectionProvider from './context/avtive-section-context';
 import DarkModeContextProvider from './context/dark-mode-context';
-import { motion } from 'framer-motion';
 
 function App() {
   return (
@@ -29,14 +27,6 @@ function App() {
           <HorizontalLine />
           <ContactMe />
           <Footer />
-          <motion.a
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            href='#'
-            className='fixed right-16 bottom-10 h-fit w-fit bg-gray-900 p-2 rounded-full text-white hover:bg-gray-950 hover:scale-110 active:scale-105 group transition-all dark:bg-gray-50/50 dark:hover:bg-gray-50/70 dark:text-gray-950'
-          >
-            <FaArrowUp className='group-hover:-translate-y-1 transition-all' />
-          </motion.a>
         </DarkModeContextProvider>
       </ActiveSectionProvider>
     </div>

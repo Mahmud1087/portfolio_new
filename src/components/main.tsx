@@ -10,6 +10,7 @@ import SingleProject from './SingleProject';
 import Skills from './Skills';
 import ContactMe from './ContactMe';
 import Footer from './Footer';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   Skills,
   ContactMe,
   Footer,
+  ThemeSwitcher,
 };

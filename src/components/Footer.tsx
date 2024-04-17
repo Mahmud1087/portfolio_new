@@ -1,4 +1,6 @@
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa6';
+import { FaArrowUp, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa6';
+import { motion } from 'framer-motion';
+import ThemeSwitcher from './ThemeSwitcher';
 
 const Footer = () => {
   return (
@@ -30,6 +32,20 @@ const Footer = () => {
           <FaGithub />
         </a>
       </section>
+
+      {/* Arrow to go back up */}
+      <motion.a
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        href='#'
+        className='fixed right-4 bottom-6 h-8 w-8 flex justify-center items-center bg-gray-900 p-2 rounded-full text-white hover:bg-gray-950 hover:scale-110 active:scale-105 group transition-all dark:bg-gray-50/50 dark:hover:bg-gray-50/70 dark:text-gray-950 sm:right-16 sm:bottom-10'
+      >
+        <FaArrowUp className='text-sm group-hover:-translate-y-1 transition-all' />
+      </motion.a>
+
+      <div className='fixed left-4 bottom-6 sm:hidden'>
+        <ThemeSwitcher />
+      </div>
     </footer>
   );
 };
