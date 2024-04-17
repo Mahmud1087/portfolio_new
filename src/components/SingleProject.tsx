@@ -25,14 +25,16 @@ const SingleProject = (project: ProjectProps) => {
       }}
       href={url}
       target='_blank'
-      className='group even:flex-row-reverse flex relative w-full h-80 bg-gray-200 rounded-xl border border-black/10 shadow-lg shadow-black/15 overflow-hidden hover:bg-gray-300 transition-all dark:bg-white/10 dark:hover:bg-white/20'
+      className='group flex flex-col-reverse relative w-full h-fit bg-gray-200 rounded-xl border border-black/10 shadow-lg shadow-black/15 overflow-hidden hover:bg-gray-300 transition-all dark:bg-white/10 dark:hover:bg-white/20 sm:even:flex-row-reverse sm:flex-row sm:h-80'
     >
-      <div className='w-1/2 h-full flex flex-col text-start pl-8 pt-10 pr-8'>
-        <h1 className='text-2xl font-semibold mb-5 dark:font-normal dark:text-white'>
+      <div className='w-full h-full flex flex-col text-start pt-5 px-5 sm:pt-10 sm:px-8 sm:w-1/2'>
+        <h1 className='text-2xl font-semibold mb-3 dark:font-normal dark:text-white sm:mb-5'>
           {projectName}
         </h1>
-        <p className=' dark:font-[200] dark:text-white/85'>{description}</p>
-        <div className='mt-auto mb-12 flex gap-x-1 gap-y-2 flex-wrap'>
+        <p className=' dark:font-[200] dark:text-white/85 mb-6 sm:mb-0'>
+          {description}
+        </p>
+        <div className='mt-auto mb-8 flex gap-x-1 gap-y-2 flex-wrap sm:mb-12'>
           {stackUsed.map((stack, i) => {
             return (
               <aside
@@ -45,11 +47,12 @@ const SingleProject = (project: ProjectProps) => {
           })}
         </div>
       </div>
-      <div className='relative w-1/2 h-full'>
+      <div className='relative w-full h-56 p-3 sm:p-0 sm:h-full sm:w-1/2'>
         <img
           src={imageUrl}
           alt='Project Image Screenshot'
-          className='absolute w-full shadow-2xl shadow-black h-full top-6 -right-7 object-cover rounded-xl group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-3 group-hover:scale-[1.03] transition group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-3 group-even:group-hover:scale-[1.03 group-even:-left-7'
+          className='relative w-full shadow-lg shadow-black/40 h-full object-cover rounded-xl
+           sm:absolute sm:top-6 sm:-right-7 sm:shadow-2xl sm:shadow-black sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-3 sm:group-hover:scale-[1.03] transition sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:translate-y-3 sm:group-even:group-hover:rotate-3 sm:group-even:group-hover:scale-[1.03 sm:group-even:-left-7'
         />
       </div>
     </motion.a>
