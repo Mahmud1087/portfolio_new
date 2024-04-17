@@ -17,7 +17,7 @@ const AboutMe = () => {
       id='about'
     >
       <Title title='About Me' />
-      <p className='text-lg dark:text-white/70 dark:font-[200]'>
+      <p className='text-lg dark:text-white/70 dark:font-[200] sm:px-6 lg:px-0 '>
         After graduating with a degree in{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
           accounting
