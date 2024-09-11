@@ -1,4 +1,5 @@
 import projectImg1 from '../assets/logistics.png';
+import greenremedies from '../assets/greenremedies.png';
 import projectImg2 from '../assets/audiophile.png';
 import projectImg3 from '../assets/crappo.png';
 import projectImg4 from '../assets/foodex.png';
@@ -16,6 +17,15 @@ export const navMenu = [
 ] as const;
 
 export const projectsData = [
+  {
+    projectName: 'Green Remedies',
+    description:
+      'An open source internship project hosted by Enoverlab.com. Worked with a team of product managers, designers, and developers to build an ecommerce web app for herbal products',
+    stackUsed: ['React', 'TailwindCSS', 'Figma', 'AOS library', 'Kinde Auth'],
+    imageUrl: greenremedies,
+    url: 'https://thegreenremedies.com',
+    compressedImg: '',
+  },
   {
     projectName: 'Transit flow Logististcs',
     description:
@@ -60,6 +70,7 @@ export const skillsData = [
   'JavaScript',
   'Tailwind',
   'Framer Motion',
+  'NextJS',
   'React',
   'TypeScript',
   'Figma',
