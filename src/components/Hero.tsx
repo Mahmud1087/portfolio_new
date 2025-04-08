@@ -26,7 +26,7 @@ const Hero = () => {
       id='#'
     >
       <section className='absolute left-1/2 right-1/2 -translate-x-1/2 w-full rounded-full m-auto blur-[180px] bg-gradient-to-r from-slate-300 to-red-400/80 h-full dark:from-slate-600 dark:to-red-400/70 lg:w-3/5'></section>
-      <section className='w-[90%] m-auto grid place-items-center gap-8 relative sm:w-3/4 lg:w-1/2'>
+      <section className='w-[90%] m-auto grid place-items-center gap-8 relative sm:w-3/4 lg:w-3/5'>
         <motion.div
           initial={{ scale: 0.2 }}
           animate={{ scale: 1 }}
@@ -72,28 +72,32 @@ const Hero = () => {
             </span>
             <br />
             Builds <i>beautiful, responsive and interactive</i> websites using{' '}
-            <u>React</u>
+            <u>
+              <b>React</b>
+            </u>
           </h1>
-          <aside className='flex flex-col gap-4 items-center sm:flex-row'>
-            <a
-              className='group bg-gray-950 rounded-full w-fit flex items-center gap-4 py-[10px] px-6 text-gray-50 hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105'
-              href='#contact'
-              onClick={() => {
-                setActiveSection('Contact');
-                setTimeOfLastClick(Date.now());
-              }}
-            >
-              Contact me here{' '}
-              <FaArrowRightLong className='text-white/50 group-hover:translate-x-1' />
-            </a>
-            <a
-              className='group bg-white rounded-full w-fit flex items-center gap-3 py-[10px] px-6 font-semibold text-gray-900 hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white dark:font-[400]'
-              href='My-FE-Resume.pdf'
-              download={true}
-            >
-              Download CV{' '}
-              <FaDownload className='group-hover:translate-y-[1.5px] text-gray-500 text-sm transition-all dark:text-gray-900' />
-            </a>
+          <aside className='w-full flex flex-col-reverse gap-6 items-center'>
+            <div className='flex justify-center gap-5 w-full'>
+              <a
+                className='group bg-gray-950 rounded-full w-fit flex justify-center items-center gap-4 py-[10px] px-6 text-gray-50 hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105'
+                href='#contact'
+                onClick={() => {
+                  setActiveSection('Contact');
+                  setTimeOfLastClick(Date.now());
+                }}
+              >
+                Send an Email{' '}
+                <FaArrowRightLong className='text-white/50 group-hover:translate-x-1' />
+              </a>
+              <a
+                className='group bg-white rounded-full w-fit flex justify-center items-center gap-3 py-[10px] px-6 font-semibold text-gray-900 hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white dark:font-[400]'
+                href='My-FE-Resume.pdf'
+                download={true}
+              >
+                Download CV{' '}
+                <FaDownload className='group-hover:translate-y-[1.5px] text-gray-500 text-sm transition-all dark:text-gray-900' />
+              </a>
+            </div>
             <div className='flex gap-4 mt-4 sm:mt-0'>
               <a
                 className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
