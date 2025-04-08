@@ -8,6 +8,7 @@ import compressedImg1 from '../assets/compressed/audiophile.jpg';
 import compressedImg2 from '../assets/compressed/crappo.jpg';
 import compressedImg3 from '../assets/compressed/foodex.jpg';
 import compressedImg4 from '../assets/compressed/logisticsBlur.jpg';
+import { Briefcase, Code } from 'lucide-react';
 
 export const navMenu = [
   { id: 1, title: 'Home', link: '#' },
@@ -18,18 +19,42 @@ export const navMenu = [
   { id: 5, title: 'Contact', link: '#contact' },
 ] as const;
 
-export const experience = [
+export const experiences = [
   {
-    id: 1,
-    company: 'BellBank',
-    title: '',
-    icon: '',
+    title: 'Frontend Developer Intern (Remote)',
+    company: 'BellBank MFB',
+    period: 'Nov 2024 – Present',
+    description:
+      'Built customer-facing interfaces and admin dashboard with React and API integration.',
+    icon: <Briefcase size={16} className='text-white' />,
   },
   {
-    id: 2,
-    company: '',
-    title: '',
-    icon: '',
+    title: 'HNG Internship',
+    company: 'HNG Tech',
+    period: 'Jan 2025 – April 2025',
+    description: (
+      <span>
+        Building (<a href='https://app.gradific.com'>Gradific</a>), a grading
+        app for educators, bootcamps, internships, and institutions. Worked in a
+        competitive environment and fast paced environment.
+      </span>
+    ),
+    icon: <Briefcase size={16} className='text-white' />,
+  },
+  {
+    title: 'Frontend Developer Intern',
+    company: 'Enoverlab',
+    period: 'March 2024 – June 2024',
+    description: (
+      <span>
+        Built reusable components, collaborated on design systems, and
+        contributed to live project (
+        <a href='https://thegreenremedies.com'>Green Remedies</a>) using React
+        and Tailwind.
+      </span>
+    ),
+
+    icon: <Code size={16} className='text-white' />,
   },
 ];
 

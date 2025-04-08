@@ -23,8 +23,10 @@ function App() {
           <AboutMe />
           <HorizontalLine />
           <Experience />
-          <HorizontalLine />
-          <Projects />
+          {/* <HorizontalLine /> */}
+          <div className='mt-32'>
+            <Projects />
+          </div>
           <HorizontalLine />
           <Skills />
           <HorizontalLine />
