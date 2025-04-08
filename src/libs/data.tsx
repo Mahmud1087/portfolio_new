@@ -158,6 +158,5 @@ export const skillsData = [
   'React',
   'TypeScript',
   'Figma',
-  'Bootstrap',
   'Git/Github',
 ] as const;
