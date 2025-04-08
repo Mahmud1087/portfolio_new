@@ -9,7 +9,7 @@ import compressedImg1 from '../assets/compressed/audiophile.jpg';
 import compressedImg2 from '../assets/compressed/crappo.jpg';
 import compressedImg3 from '../assets/compressed/foodex.jpg';
 import compressedImg4 from '../assets/compressed/logisticsBlur.jpg';
-import { Briefcase, Code } from 'lucide-react';
+import { BriefcaseBusiness, Code, Monitor } from 'lucide-react';
 
 export const navMenu = [
   { id: 1, title: 'Home', link: '#' },
@@ -27,7 +27,7 @@ export const experiences = [
     period: 'Nov 2024 – Present',
     description:
       'Built customer-facing interfaces and admin dashboard with React and API integration.',
-    icon: <Briefcase size={16} className='text-white' />,
+    icon: <BriefcaseBusiness size={16} className='text-white' />,
   },
   {
     title: 'HNG Internship',
@@ -44,7 +44,7 @@ export const experiences = [
         environment.
       </span>
     ),
-    icon: <Briefcase size={16} className='text-white' />,
+    icon: <Monitor size={16} className='text-white' />,
   },
   {
     title: 'Frontend Developer Intern',
