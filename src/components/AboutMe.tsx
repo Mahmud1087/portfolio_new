@@ -18,13 +18,14 @@ const AboutMe = () => {
     >
       <Title title='About Me' />
       <p className='text-lg dark:text-white/70 dark:font-[200] sm:px-6 lg:px-0 '>
-        I am a passionate{' '}
+        I am a{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
           Frontend Developer,
         </span>{' '}
-        technical writer, and open source enthusiast. I am a goal-oriented
-        person, with good teamwork, ability to communicate well, and also learn
-        fast.
+        proficient with ReactJs, NextJs, Typescript, and Tailwind for styling.
+        I'm a goal-oriented person, with good teamwork, ability to communicate
+        well, and also learn fast. These skills I got from working with people
+        on live products, internships, and work settings.
         <br />I hold a bachelors degree in{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
           Metallurgical and Materials Engineering.
@@ -35,8 +36,6 @@ const AboutMe = () => {
         <span className='font-semibold dark:font-normal dark:text-white'>
           NextJS and TypeScript
         </span>
-        . I am currently looking for an internship or junior frontend developer
-        roles.
         <br />
         <br />
         When I'm not coding, I enjoy reading books, watching movies, and
