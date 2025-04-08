@@ -5,28 +5,40 @@ import { Briefcase, Code, Monitor } from 'lucide-react';
 
 const experiences = [
   {
-    title: 'Frontend Developer Intern',
-    company: 'Enoverlab',
-    period: 'March 2023 – July 2023',
+    title: 'Frontend Developer Intern (Remote)',
+    company: 'BellBank MFB',
+    period: 'Nov 2024 – Present',
     description:
-      'Built reusable components, collaborated on design systems, and contributed to live projects using React and Tailwind.',
-    icon: <Code size={16} className='text-white' />,
+      'Built customer-facing interfaces and admin dashboard with React and API integration.',
+    icon: <Briefcase size={16} className='text-white' />,
   },
   {
     title: 'HNG Internship',
-    company: 'HNGx',
-    period: 'August 2023 – October 2023',
-    description:
-      'Worked on open-source frontend projects, received mentorship, and completed tasks in a competitive environment.',
+    company: 'HNG Tech',
+    period: 'Jan 2025 – April 2025',
+    description: (
+      <span>
+        Building (<a href='https://app.gradific.com'>Gradific</a>), a grading
+        app for educators, bootcamps, internships, and institutions. Worked in a
+        competitive environment and fast paced environment.
+      </span>
+    ),
     icon: <Monitor size={16} className='text-white' />,
   },
   {
-    title: 'Frontend Engineer (Remote)',
-    company: 'BellBank MFB',
-    period: 'Nov 2023 – Jan 2024',
-    description:
-      'Built customer-facing interfaces and admin dashboard with React and Clerk authentication integration.',
-    icon: <Briefcase size={16} className='text-white' />,
+    title: 'Frontend Developer Intern',
+    company: 'Enoverlab',
+    period: 'March 2024 – June 2024',
+    description: (
+      <span>
+        Built reusable components, collaborated on design systems, and
+        contributed to live project (
+        <a href='https://thegreenremedies.com'>Green Remedies</a>) using React
+        and Tailwind.
+      </span>
+    ),
+
+    icon: <Code size={16} className='text-white' />,
   },
 ];
 
