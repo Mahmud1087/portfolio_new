@@ -7,8 +7,15 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 type ProjectProps = (typeof projectsData)[number];
 
 const SingleProject = (project: ProjectProps) => {
-  const { projectName, description, imageUrl, stackUsed, url, compressedImg } =
-    project;
+  const {
+    projectName,
+    description,
+    imageUrl,
+    stackUsed,
+    url,
+    compressedImg,
+    status,
+  } = project;
 
   const ref = useRef<HTMLAnchorElement>(null);
   const { scrollYProgress } = useScroll({
@@ -51,6 +58,11 @@ const SingleProject = (project: ProjectProps) => {
         </div>
       </div>
       <div className='relative w-full h-56 p-3 sm:p-0 sm:h-full sm:w-1/2'>
+        {status === 'In-Progress' && (
+          <div className='absolute right-2 top-3 px-5 py-1 rounded-full bg-yellow-300 text-blue-900 text-sm font-semibold z-10'>
+            In Progress
+          </div>
+        )}
         <LazyLoadImage
           placeholderSrc={compressedImg}
           wrapperProps={{

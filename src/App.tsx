@@ -1,6 +1,7 @@
 import {
   AboutMe,
   ContactMe,
+  Experience,
   Footer,
   Hero,
   HorizontalLine,
@@ -20,6 +21,8 @@ function App() {
           <Hero />
           <HorizontalLine />
           <AboutMe />
+          <HorizontalLine />
+          <Experience />
           <HorizontalLine />
           <Projects />
           <HorizontalLine />

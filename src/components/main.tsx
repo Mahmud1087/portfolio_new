@@ -6,6 +6,7 @@ import HorizontalLine from './HorizontalLine';
 import AboutMe from './AboutMe';
 import Title from './Title';
 import Projects from './Projects';
+import Experience from './Experience';
 import SingleProject from './SingleProject';
 import Skills from './Skills';
 import ContactMe from './ContactMe';
@@ -21,6 +22,7 @@ export {
   AboutMe,
   Title,
   Projects,
+  Experience,
   SingleProject,
   Skills,
   ContactMe,

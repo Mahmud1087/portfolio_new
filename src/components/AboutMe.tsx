@@ -13,7 +13,7 @@ const AboutMe = () => {
         duration: 0.3,
       }}
       ref={ref}
-      className='scroll-mt-28 relative flex flex-col gap-8 w-[88%] m-auto items-center text-center sm:w-3/4 lg:w-1/2'
+      className='scroll-mt-48 relative flex flex-col gap-8 w-[88%] m-auto items-center text-center sm:w-3/4 lg:w-1/2'
       id='about'
     >
       <Title title='About Me' />

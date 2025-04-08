@@ -1,5 +1,6 @@
 import projectImg1 from '../assets/logistics.png';
 import greenremedies from '../assets/greenremedies.png';
+import fashmall from '../assets/fashmall.png';
 import projectImg2 from '../assets/audiophile.png';
 import projectImg3 from '../assets/crappo.png';
 import projectImg4 from '../assets/foodex.png';
@@ -11,12 +12,38 @@ import compressedImg4 from '../assets/compressed/logisticsBlur.jpg';
 export const navMenu = [
   { id: 1, title: 'Home', link: '#' },
   { id: 2, title: 'About', link: '#about' },
+  { id: 2, title: 'Experience', link: '#experience' },
   { id: 3, title: 'Projects', link: '#projects' },
   { id: 4, title: 'Skills', link: '#skills' },
   { id: 5, title: 'Contact', link: '#contact' },
 ] as const;
 
+export const experience = [
+  {
+    id: 1,
+    company: 'BellBank',
+    title: '',
+    icon: '',
+  },
+  {
+    id: 2,
+    company: '',
+    title: '',
+    icon: '',
+  },
+];
+
 export const projectsData = [
+  {
+    projectName: 'FashMall',
+    description:
+      'An ecommerce fashion marketplace where users can buy or sell fashion items like clothing, assecories, shoes, etc. Users can sign up and will be able to switch to either as a buyer or as a seller.',
+    stackUsed: ['NextJS', 'TailwindCSS', 'Clerk', 'Convex'],
+    imageUrl: fashmall,
+    url: 'https://fashmall.netlify.app',
+    compressedImg: '',
+    status: 'In-Progress',
+  },
   {
     projectName: 'Green Remedies',
     description:
@@ -25,6 +52,7 @@ export const projectsData = [
     imageUrl: greenremedies,
     url: 'https://thegreenremedies.com',
     compressedImg: '',
+    status: 'Completed',
   },
   {
     projectName: 'Transit flow Logististcs',
@@ -34,6 +62,7 @@ export const projectsData = [
     imageUrl: projectImg1,
     url: 'https://transit-flow-logistics.netlify.app',
     compressedImg: compressedImg1,
+    status: 'Completed',
   },
   {
     projectName: 'Audiophile E-commerce',
@@ -43,6 +72,7 @@ export const projectsData = [
     imageUrl: projectImg2,
     url: 'https://audiophile-estore.netlify.app',
     compressedImg: compressedImg2,
+    status: 'Completed',
   },
   {
     projectName: 'Crappo Cryptocurrency',
@@ -52,6 +82,7 @@ export const projectsData = [
     imageUrl: projectImg3,
     url: 'https://crappo-crypto-page.netlify.app',
     compressedImg: compressedImg3,
+    status: 'Completed',
   },
   {
     projectName: 'FoodEx Restaurant',
@@ -61,6 +92,7 @@ export const projectsData = [
     imageUrl: projectImg4,
     url: 'https://foodex-restaurant.netlify.app',
     compressedImg: compressedImg4,
+    status: 'Completed',
   },
 ] as const;
 
@@ -71,6 +103,7 @@ export const skillsData = [
   'Tailwind',
   'Framer Motion',
   'NextJS',
+  'Convex',
   'React',
   'TypeScript',
   'Figma',

@@ -62,16 +62,17 @@ const Hero = () => {
           className='mt-2 flex flex-col gap-10 items-center'
         >
           <h1 className='text-center text-2xl px-5 dark:text-white/90 dark:font-[200] sm:px-16'>
-            Hello,{' '}
+            {/* Hello,{' '}
             <span className='font-semibold dark:font-normal'>
               I'm Mahmud Abdulazeez
             </span>
-            . I'm a{' '}
+            . I'm a{' '} */}
             <span className='font-semibold dark:font-normal'>
-              frontend developer, technical writer and open source enthusiast.
-            </span>{' '}
-            I enjoy building <i>responsive and interactive</i> websites. My
-            focus is <u>React</u>
+              Frontend developer
+            </span>
+            <br />
+            Builds <i>beautiful, responsive and interactive</i> websites using{' '}
+            <u>React</u>
           </h1>
           <aside className='flex flex-col gap-4 items-center sm:flex-row'>
             <a
@@ -87,7 +88,7 @@ const Hero = () => {
             </a>
             <a
               className='group bg-white rounded-full w-fit flex items-center gap-3 py-[10px] px-6 font-semibold text-gray-900 hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white dark:font-[400]'
-              href='CV.pdf'
+              href='My-FE-Resume.pdf'
               download={true}
             >
               Download CV{' '}
