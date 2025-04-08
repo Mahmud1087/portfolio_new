@@ -77,7 +77,7 @@ const Hero = () => {
             </u>
           </h1>
           <aside className='w-full flex flex-col-reverse gap-6 items-center'>
-            <div className='flex justify-center gap-5 w-full'>
+            <div className='flex flex-col items-center gap-5 w-full md:flex-row md:justify-center'>
               <a
                 className='group bg-gray-950 rounded-full w-fit flex justify-center items-center gap-4 py-[10px] px-6 text-gray-50 hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105'
                 href='#contact'
