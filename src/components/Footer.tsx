@@ -4,28 +4,28 @@ import ThemeSwitcher from './ThemeSwitcher';
 
 const Footer = () => {
   return (
-    <footer className='mt-52 mb-10 text-center dark:text-white/70 dark:font-[200]'>
-      <p>&copy; 2024 Mahmud Abdulazeez. All rights reserved.</p>
-      <p className='font-semibold mt-5'>
+    <footer className='mt-24 mb-10 text-center dark:text-white/70 dark:font-[200]'>
+      <p>&copy; enesi.dev❣️ All rights reserved.</p>
+      {/* <p className='font-semibold mt-5'>
         Built with React, Typescript, Tailwind CSS, Framer Motion, and EmailJs
-      </p>
-      <section className='mt-12 flex justify-center items-center gap-8'>
+      </p> */}
+      <section className='mt-5 flex justify-center items-center gap-8'>
         <a
-          className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
+          className='bg-white rounded-full w-8 h-8 grid place-items-center text-gray-900 text-base hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
           href='https://www.linkedin.com/in/enesifrontenddev'
           target='_blank'
         >
           <FaLinkedin />
         </a>
         <a
-          className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
+          className='bg-white rounded-full w-8 h-8 grid place-items-center text-gray-900 text-base hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
           href='https://twitter.com/MahmudEnesi'
           target='_blank'
         >
           <FaTwitter />
         </a>
         <a
-          className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
+          className='bg-white rounded-full w-8 h-8 grid place-items-center text-gray-900 text-base hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
           href='https://www.github.com/Mahmud1087'
           target='_blank'
         >
