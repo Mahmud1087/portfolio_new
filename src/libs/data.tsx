@@ -1,6 +1,7 @@
 import projectImg1 from '../assets/logistics.png';
 import greenremedies from '../assets/greenremedies.png';
 import fashmall from '../assets/fashmall.png';
+import notespace from '../assets/notespace.png';
 import projectImg2 from '../assets/audiophile.png';
 import projectImg3 from '../assets/crappo.png';
 import projectImg4 from '../assets/foodex.png';
@@ -34,9 +35,13 @@ export const experiences = [
     period: 'Jan 2025 – April 2025',
     description: (
       <span>
-        Building (<a href='https://app.gradific.com'>Gradific</a>), a grading
-        app for educators, bootcamps, internships, and institutions. Worked in a
-        competitive environment and fast paced environment.
+        Building ({' '}
+        <a href='https://app.gradific.com' className='text-blue-500 underline'>
+          Gradific
+        </a>{' '}
+        ), a grading app for educators, bootcamps, internships, and
+        institutions. Worked in a competitive environment and fast paced
+        environment.
       </span>
     ),
     icon: <Briefcase size={16} className='text-white' />,
@@ -48,9 +53,14 @@ export const experiences = [
     description: (
       <span>
         Built reusable components, collaborated on design systems, and
-        contributed to live project (
-        <a href='https://thegreenremedies.com'>Green Remedies</a>) using React
-        and Tailwind.
+        contributed to live project ({' '}
+        <a
+          href='https://thegreenremedies.com'
+          className='text-blue-500 underline'
+        >
+          Green Remedies
+        </a>{' '}
+        ) using React and Tailwind.
       </span>
     ),
 
@@ -59,6 +69,22 @@ export const experiences = [
 ];
 
 export const projectsData = [
+  {
+    projectName: 'NoteSpace',
+    description:
+      'Notes Application that allows users to create, edit, organize, and manange notes from a dashboard. The dashboard is only accessible if a user is authenticated.',
+    stackUsed: [
+      'ReactJS',
+      'Typescript',
+      'TailwindCSS',
+      'Convex Auth',
+      'Convex',
+    ],
+    imageUrl: notespace,
+    url: 'https://final-project-notespace.vercel.app/',
+    compressedImg: '',
+    status: 'Completed',
+  },
   {
     projectName: 'FashMall',
     description:
