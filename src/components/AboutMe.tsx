@@ -34,7 +34,7 @@ const AboutMe = () => {
         My <i>favorite part of programming</i> is the problem solving. My core
         stack is{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
-          NextJS and TypeScript
+          ReactJS and TypeScript
         </span>
         <br />
         <br />
