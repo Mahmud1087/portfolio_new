@@ -3,6 +3,7 @@ import {
   FaDownload,
   FaGithub,
   FaLinkedin,
+  FaXTwitter,
 } from 'react-icons/fa6';
 // import userImage from '../assets/headshot-image.jpg';
 // import userImage from '../assets/image4.jpg';
@@ -105,6 +106,13 @@ const Hero = () => {
                 target='_blank'
               >
                 <FaLinkedin />
+              </a>
+              <a
+                className='bg-white rounded-full w-10 h-10 grid place-items-center text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/50'
+                href='https://www.x.com/MahmudEnesi'
+                target='_blank'
+              >
+                <FaXTwitter />
               </a>
               <a
                 className='bg-white rounded-full w-10 h-10 grid place-items-center text-gray-900 text-lg hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
