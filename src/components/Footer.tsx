@@ -1,4 +1,4 @@
-import { FaArrowUp, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa6';
+import { FaArrowUp, FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import ThemeSwitcher from './ThemeSwitcher';
 
@@ -22,7 +22,7 @@ const Footer = () => {
           href='https://twitter.com/MahmudEnesi'
           target='_blank'
         >
-          <FaTwitter />
+          <FaXTwitter />
         </a>
         <a
           className='bg-white rounded-full w-8 h-8 grid place-items-center text-gray-900 text-base hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white/70'
