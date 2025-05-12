@@ -26,7 +26,7 @@ const Hero = () => {
       id='#'
     >
       <section className='absolute left-1/2 right-1/2 -translate-x-1/2 w-full rounded-full m-auto blur-[180px] bg-gradient-to-r from-slate-300 to-red-400/80 h-full dark:from-slate-600 dark:to-red-400/70 lg:w-3/5'></section>
-      <section className='w-[90%] m-auto grid place-items-center gap-8 relative sm:w-3/4 lg:w-3/5'>
+      <section className='w-[90%] m-auto grid place-items-center gap-8 relative sm:w-3/4'>
         <motion.div
           initial={{ scale: 0.2 }}
           animate={{ scale: 1 }}
@@ -61,13 +61,13 @@ const Hero = () => {
           }}
           className='mt-2 flex flex-col gap-10 items-center'
         >
-          <h1 className='text-center text-2xl px-5 dark:text-white/90 dark:font-[200] sm:px-16'>
+          <h1 className='text-center text-xl px-5 dark:text-white/90 dark:font-[200] sm:px-16'>
             {/* Hello,{' '}
             <span className='font-semibold dark:font-normal'>
               I'm Mahmud Abdulazeez
             </span>
             . I'm a{' '} */}
-            <span className='font-semibold dark:font-normal'>
+            <span className='font-semibold dark:text-green-300 text-3xl dark:font-normal'>
               Frontend developer
             </span>
             <br />

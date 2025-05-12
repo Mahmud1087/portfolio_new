@@ -18,7 +18,47 @@ const AboutMe = () => {
     >
       <Title title='About Me' />
       <p className='text-lg dark:text-white/70 dark:font-[200] sm:px-6 lg:px-0 '>
-        I am a{' '}
+        I specialize in building cutting-edge user interfaces using{' '}
+        <span className='font-semibold dark:font-normal dark:text-white'>
+          React.js, Next.js, TypeScript, and Tailwind CSS.{' '}
+        </span>
+        My strength lies in transforming design concepts into powerful,
+        user-friendly digital experiences that help businesses make a real
+        impact.
+        <br />
+        Through internships and collaborative team projects, I've deveoploed my
+        skills in building live products that not only{' '}
+        <span className='font-semibold dark:font-normal dark:text-white'>
+          look great but perform exceptionally.
+        </span>
+        <br />
+        <br />
+        {/* My approach combines technical expertise with a keen eye for design,
+        ensuring every project delivers tangible value.
+        <br /> */}
+        Whether it's{' '}
+        <span className='font-semibold dark:font-normal dark:text-white'>
+          optimizing performance, creating pixel-perfect responsive designs, or
+          integrating complex APIs,
+        </span>
+        I'm committed to solving real-world challenges.
+        <br />
+        <br />
+        My professional philosophy is simple:{' '}
+        <span className='font-semibold dark:font-normal dark:text-white'>
+          never stop learning.{' '}
+        </span>
+        I'm constantly exploring the{' '}
+        <span className='font-semibold dark:font-normal dark:text-white'>
+          latest frontend technologies,{' '}
+        </span>
+        pushing the boundaries of what's possible in web development. This
+        commitment allows me to bring{' '}
+        <span className='font-semibold dark:font-normal dark:text-white'>
+          fresh, innovative solutions{' '}
+        </span>
+        to every project and teams I work with.
+        {/* I am a{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
           Frontend Developer,
         </span>{' '}
@@ -32,11 +72,11 @@ const AboutMe = () => {
         </span>
         <br />
         My <i>favorite part of programming</i> is the problem solving.
-        {/* My core
+        My core
         stack is{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
           ReactJS and TypeScript
-        </span> */}
+        </span>
         <br />
         <br />
         When I'm not coding, I enjoy reading books, watching movies, and
@@ -44,7 +84,7 @@ const AboutMe = () => {
         <span className='font-semibold dark:font-normal dark:text-white'>
           enjoy learning new things and staying up to date with new technologies
         </span>
-        .
+        . */}
       </p>
     </motion.div>
   );
