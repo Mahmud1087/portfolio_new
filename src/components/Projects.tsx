@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <section
       ref={ref}
-      className='scroll-mt-28 relative flex flex-col gap-8 w-[90%] m-auto items-center text-center sm:w-[70%] lg:w-1/2'
+      className='scroll-mt-28 relative flex flex-col gap-8 w-[90%] m-auto items-center text-center sm:w-[65%]'
       id='projects'
     >
       <Title title='Projects' />

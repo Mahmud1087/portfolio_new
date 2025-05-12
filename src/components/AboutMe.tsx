@@ -31,11 +31,12 @@ const AboutMe = () => {
           Metallurgical and Materials Engineering.
         </span>
         <br />
-        My <i>favorite part of programming</i> is the problem solving. My core
+        My <i>favorite part of programming</i> is the problem solving.
+        {/* My core
         stack is{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
           ReactJS and TypeScript
-        </span>
+        </span> */}
         <br />
         <br />
         When I'm not coding, I enjoy reading books, watching movies, and

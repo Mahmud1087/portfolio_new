@@ -1,15 +1,16 @@
-import projectImg1 from '../assets/logistics.png';
+// import projectImg1 from '../assets/logistics.png';
 import greenremedies from '../assets/greenremedies.png';
 import fashmall from '../assets/fashmall.png';
 import notespace from '../assets/notespace.png';
 import projectImg2 from '../assets/audiophile.png';
-import projectImg3 from '../assets/crappo.png';
-import projectImg4 from '../assets/foodex.png';
-import compressedImg1 from '../assets/compressed/audiophile.jpg';
+import gradific from '../assets/gradific.png';
+// import projectImg3 from '../assets/crappo.png';
+// import projectImg4 from '../assets/foodex.png';
+// import compressedImg1 from '../assets/compressed/audiophile.jpg';
 import compressedImg2 from '../assets/compressed/crappo.jpg';
-import compressedImg3 from '../assets/compressed/foodex.jpg';
-import compressedImg4 from '../assets/compressed/logisticsBlur.jpg';
-import { BriefcaseBusiness, Code, Monitor } from 'lucide-react';
+// import compressedImg3 from '../assets/compressed/foodex.jpg';
+// import compressedImg4 from '../assets/compressed/logisticsBlur.jpg';
+import { BriefcaseBusiness, Code, Laptop, Monitor } from 'lucide-react';
 
 export const navMenu = [
   { id: 1, title: 'Home', link: '#' },
@@ -22,32 +23,50 @@ export const navMenu = [
 
 export const experiences = [
   {
-    title: 'Frontend Developer Intern (Remote)',
+    title: 'Frontend Developer',
     company: 'BellBank MFB',
     period: 'Nov 2024 – Present',
     description:
-      'Built customer-facing interfaces and admin dashboard with React and API integration.',
+      'Build customer-facing interfaces and admin dashboard with React and API integration.',
     icon: <BriefcaseBusiness size={16} className='text-white' />,
   },
   {
-    title: 'HNG Internship',
+    title: 'Frontend Developer Intern',
     company: 'HNG Tech',
-    period: 'Jan 2025 – April 2025',
+    period: 'Feb 2025 – April 2025',
     description: (
       <span>
         Building ({' '}
-        <a href='https://app.gradific.com' className='text-blue-500 underline'>
+        <a href='https://gradific.com' className='text-blue-500 underline'>
           Gradific
         </a>{' '}
-        ), a grading app for educators, bootcamps, internships, and
-        institutions. Worked in a competitive environment and fast paced
-        environment.
+        ), an AI grading app for educators, bootcamps, internships, and
+        institutions. Worked in a competitive and fast paced environment.
       </span>
     ),
     icon: <Monitor size={16} className='text-white' />,
   },
   {
     title: 'Frontend Developer Intern',
+    company: 'FlexiSAF Edusoft Limited',
+    period: 'Jan 2025 – May 2025',
+    description: (
+      <span>
+        Built ({' '}
+        <a
+          href='https://final-project-notespace.vercel.app/'
+          className='text-blue-500 underline'
+        >
+          NoteSpace
+        </a>{' '}
+        ), a note taking app as part of the final project of the internship.
+        Worked in an agile environment with weekly standups and deadlines.
+      </span>
+    ),
+    icon: <Laptop size={16} className='text-white' />,
+  },
+  {
+    title: 'Frontend Developer',
     company: 'Enoverlab',
     period: 'March 2024 – June 2024',
     description: (
@@ -69,6 +88,22 @@ export const experiences = [
 ];
 
 export const projectsData = [
+  {
+    projectName: 'Gradific',
+    description:
+      'An AI grading app where you can create, manage, and grade assignments, all in one place. Save time, reduce stress, and focus on what truly matters: your students. This is a team project',
+    stackUsed: [
+      'NextJS',
+      'Typescript',
+      'TailwindCSS',
+      'Nexth Auth',
+      'API Integration',
+    ],
+    imageUrl: gradific,
+    url: 'https://gradific.com',
+    compressedImg: '',
+    status: 'In-Progress',
+  },
   {
     projectName: 'NoteSpace',
     description:
@@ -105,16 +140,16 @@ export const projectsData = [
     compressedImg: '',
     status: 'Completed',
   },
-  {
-    projectName: 'Transit flow Logististcs',
-    description:
-      'A fully responsive landing page for a logistics company (TransitFlow)',
-    stackUsed: ['React', 'TailwindCSS', 'Figma'],
-    imageUrl: projectImg1,
-    url: 'https://transit-flow-logistics.netlify.app',
-    compressedImg: compressedImg1,
-    status: 'Completed',
-  },
+  // {
+  //   projectName: 'Transit flow Logististcs',
+  //   description:
+  //     'A fully responsive landing page for a logistics company (TransitFlow)',
+  //   stackUsed: ['React', 'TailwindCSS', 'Figma'],
+  //   imageUrl: projectImg1,
+  //   url: 'https://transit-flow-logistics.netlify.app',
+  //   compressedImg: compressedImg1,
+  //   status: 'Completed',
+  // },
   {
     projectName: 'Audiophile E-commerce',
     description:
@@ -125,38 +160,44 @@ export const projectsData = [
     compressedImg: compressedImg2,
     status: 'Completed',
   },
-  {
-    projectName: 'Crappo Cryptocurrency',
-    description:
-      'A fully responsive landing page for a crypto currency website.',
-    stackUsed: ['HTML', 'CSS', 'JavaScript'],
-    imageUrl: projectImg3,
-    url: 'https://crappo-crypto-page.netlify.app',
-    compressedImg: compressedImg3,
-    status: 'Completed',
-  },
-  {
-    projectName: 'FoodEx Restaurant',
-    description:
-      'A fully responsive static landing page for a restaurant (foodex). Users can view the restaurant menu, chefs, and also blog post uploaded by the restaurant',
-    stackUsed: ['HTML', 'CSS', 'JavaScript'],
-    imageUrl: projectImg4,
-    url: 'https://foodex-restaurant.netlify.app',
-    compressedImg: compressedImg4,
-    status: 'Completed',
-  },
+  // {
+  //   projectName: 'Crappo Cryptocurrency',
+  //   description:
+  //     'A fully responsive landing page for a crypto currency website.',
+  //   stackUsed: ['HTML', 'CSS', 'JavaScript'],
+  //   imageUrl: projectImg3,
+  //   url: 'https://crappo-crypto-page.netlify.app',
+  //   compressedImg: compressedImg3,
+  //   status: 'Completed',
+  // },
+  // {
+  //   projectName: 'FoodEx Restaurant',
+  //   description:
+  //     'A fully responsive static landing page for a restaurant (foodex). Users can view the restaurant menu, chefs, and also blog post uploaded by the restaurant',
+  //   stackUsed: ['HTML', 'CSS', 'JavaScript'],
+  //   imageUrl: projectImg4,
+  //   url: 'https://foodex-restaurant.netlify.app',
+  //   compressedImg: compressedImg4,
+  //   status: 'Completed',
+  // },
 ] as const;
 
 export const skillsData = [
   'HTML',
   'CSS',
   'JavaScript',
-  'Tailwind',
+  'TailwindCSS',
   'Framer Motion',
+  'Responsive Design',
   'NextJS',
   'Convex',
-  'React',
+  'ReactJS',
   'TypeScript',
   'Figma',
   'Git/Github',
+  // 'NodeJS',
+  // 'ExpressJS',
+  // 'MongoDB',
+  'Collaboration',
+  'API Integration',
 ] as const;

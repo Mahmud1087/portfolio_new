@@ -73,7 +73,7 @@ const Hero = () => {
             <br />
             Builds <i>beautiful, responsive and interactive</i> websites using{' '}
             <u>
-              <b>React</b>
+              <b>ReactJS/NextJS</b>
             </u>
           </h1>
           <aside className='w-full flex flex-col-reverse gap-6 items-center'>
@@ -91,7 +91,7 @@ const Hero = () => {
               </a>
               <a
                 className='group bg-white rounded-full w-fit flex justify-center items-center gap-3 py-[10px] px-6 font-semibold text-gray-900 hover:scale-110 transition shadow-xl shadow-black/20 active:scale-105 dark:bg-white/20 dark:text-white dark:font-[400]'
-                href='My-FE-Resume.pdf'
+                href='Resume.pdf'
                 download={true}
               >
                 Download CV{' '}

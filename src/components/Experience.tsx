@@ -22,7 +22,7 @@ const Experience = () => {
   return (
     <section
       ref={ref}
-      className='scroll-mt-28 relative w-[90%] m-auto flex flex-col items-center gap-8 text-center sm:w-[70%] lg:w-full'
+      className='scroll-mt-28 relative w-[90%] m-auto flex flex-col items-center gap-8 text-center sm:w-[70%] '
       id='experience'
     >
       <Title title='Experience' />
@@ -63,7 +63,7 @@ const Experience = () => {
                           </p>
                         </div>
                       </div>
-                      <div className='-ml-5 relative z-10'>
+                      <div className='-ml-0 relative z-10 lg:-ml-5'>
                         <div className='w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center shadow-lg border-4 border-white dark:border-gray-900'>
                           {exp.icon}
                         </div>

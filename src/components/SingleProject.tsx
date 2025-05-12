@@ -37,6 +37,11 @@ const SingleProject = (project: ProjectProps) => {
       target='_blank'
       className='group flex flex-col-reverse relative w-full h-fit bg-gray-200 rounded-xl border border-black/10 shadow-lg shadow-black/15 overflow-hidden hover:bg-gray-300 transition-all dark:bg-white/10 dark:hover:bg-white/20 sm:even:flex-row-reverse sm:flex-row sm:h-80'
     >
+      {status === 'In-Progress' && (
+        <div className='absolute right-2 top-3 px-5 py-1 rounded-full bg-yellow-300 text-blue-900 text-sm font-semibold z-10'>
+          In Progress
+        </div>
+      )}
       <div className='w-full h-full flex flex-col text-start pt-5 px-5 sm:pt-10 sm:px-8 sm:w-1/2'>
         <h1 className='text-2xl font-semibold mb-3 dark:font-normal dark:text-white sm:mb-5'>
           {projectName}
@@ -58,11 +63,6 @@ const SingleProject = (project: ProjectProps) => {
         </div>
       </div>
       <div className='relative w-full h-56 p-3 sm:p-0 sm:h-full sm:w-1/2'>
-        {status === 'In-Progress' && (
-          <div className='absolute right-2 top-3 px-5 py-1 rounded-full bg-yellow-300 text-blue-900 text-sm font-semibold z-10'>
-            In Progress
-          </div>
-        )}
         <LazyLoadImage
           placeholderSrc={compressedImg}
           wrapperProps={{
