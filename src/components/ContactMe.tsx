@@ -6,8 +6,17 @@ import { ChangeEvent, FormEvent, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { sendCustomEmail } from '../libs/send-custom-email';
+import { LoaderCircle } from 'lucide-react';
+
+const userDetails = {
+  name: '',
+  email: '',
+  message: '',
+};
 
 const ContactMe = () => {
+  const [details, setDetails] = useState(userDetails);
+  const [loading, setLoading] = useState(false);
   const { ref } = useScrollView('Contact', 0.5);
 
   const msgSent = () =>
@@ -17,28 +26,31 @@ const ContactMe = () => {
       // className: 'sent',
     });
 
-  const msgEmpty = () =>
-    toast.error('One or more fields is empty', {
+  const errorMsg = (msg: string) =>
+    toast.error(msg, {
       position: 'top-center',
       closeOnClick: true,
     });
 
-  const validate = () => {
-    details.name === '' || details.email === '' || details.message === ''
-      ? msgEmpty()
-      : msgSent();
-  };
-
-  const userDetails = {
-    name: '',
-    email: '',
-    message: '',
-  };
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    sendCustomEmail(details);
-    setDetails(userDetails);
+    setLoading(true);
+
+    try {
+      const res = await sendCustomEmail(details);
+      if (res.status !== 200) {
+        errorMsg(res.text);
+      }
+
+      setDetails(userDetails);
+      msgSent();
+    } catch (error) {
+      if (error instanceof Error) {
+        errorMsg(error.message);
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (
@@ -47,8 +59,6 @@ const ContactMe = () => {
     const { name, value } = e.target;
     setDetails((prevDetails) => ({ ...prevDetails, [name]: value }));
   };
-
-  const [details, setDetails] = useState(userDetails);
 
   return (
     <div
@@ -59,7 +69,7 @@ const ContactMe = () => {
       <ToastContainer />
       <Title title='Contact Me' />
       <p className='text-center mt-4 text-lg dark:text-white/70 dark:font-[200]'>
-        Please contact me directly at{' '}
+        You can contact me directly at{' '}
         <a href='mailto:abdulazeezm578@gmail.com' className='underline'>
           abdulazeezm578@gmail.com
         </a>{' '}
@@ -88,6 +98,7 @@ const ContactMe = () => {
             value={details.name}
             onChange={handleChange}
             required
+            disabled={loading}
             className='w-full h-full bg-transparent text-lg dark:text-white/80 dark:font-[200] focus:outline-none'
           />
         </label>
@@ -105,6 +116,7 @@ const ContactMe = () => {
             value={details.email}
             onChange={handleChange}
             required
+            disabled={loading}
             className='w-full h-full bg-transparent text-lg dark:text-white/80 dark:font-[200] focus:outline-none'
           />
         </label>
@@ -122,6 +134,7 @@ const ContactMe = () => {
             onChange={handleChange}
             required
             rows={6}
+            disabled={loading}
             className='resize-none w-full h-full bg-transparent text-lg dark:text-white/80 dark:font-[200] focus:outline-none'
           />
         </label>
@@ -129,10 +142,17 @@ const ContactMe = () => {
         <button
           type='submit'
           className='group flex items-center gap-3 mt-8 text-lg bg-gray-900 w-fit px-6 py-1 rounded-full text-white transition-all hover:scale-110 active:scale-105 dark:bg-gray-50/10'
-          onClick={validate}
+          // onClick={validate}
+          disabled={loading}
         >
-          submit{' '}
-          <FaPaperPlane className='text-sm text-white/60 group-hover:-translate-y-1 transition-all' />
+          {loading ? (
+            <LoaderCircle className='animate-spin' />
+          ) : (
+            <span className='flex items-center gap-3'>
+              submit{' '}
+              <FaPaperPlane className='text-sm text-white/60 group-hover:-translate-y-1 transition-all' />
+            </span>
+          )}
         </button>
       </motion.form>
     </div>

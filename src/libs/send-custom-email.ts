@@ -1,10 +1,13 @@
 import emailjs from '@emailjs/browser';
 import { UserDetailsType } from './types';
 
-const sendCustomEmail = (details: UserDetailsType) => {
+const sendCustomEmail = async (
+  details: UserDetailsType
+): Promise<{ status: number; text: string }> => {
   emailjs.init(import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
-  emailjs
-    .send(
+
+  try {
+    const res = await emailjs.send(
       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
       {
@@ -12,13 +15,12 @@ const sendCustomEmail = (details: UserDetailsType) => {
         name: details.name,
         message: details.message,
       }
-    )
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+    );
+    return { status: res.status, text: res.text };
+  } catch (error) {
+    console.error(error);
+    return { status: 500, text: 'Email send failed' };
+  }
 };
 
 export { sendCustomEmail };
