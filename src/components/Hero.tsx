@@ -7,13 +7,13 @@ import {
 } from 'react-icons/fa6';
 // import userImage from '../assets/headshot-image.jpg';
 // import userImage from '../assets/image4.jpg';
-import userImage from '../assets/img.jpg';
-import userImageCompressed from '../assets/compressed/img.jpg';
+// import userImage from '../assets/img.jpg';
+// import userImageCompressed from '../assets/compressed/img.jpg';
 // import userImage from '../assets/image3.jpg';
 import { useScrollView } from '../libs/hooks';
 import { useActiveSectionContext } from '../context/avtive-section-context';
 import { motion } from 'framer-motion';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Hero = () => {
@@ -36,19 +36,8 @@ const Hero = () => {
           }}
           className='w-32 h-32 rounded-full bg-white flex justify-center items-center shadow-2xl shadow-black/70 dark:bg-gray-950/70 dark:shadow-black'
         >
-          <LazyLoadImage
-            placeholderSrc={userImageCompressed}
-            effect='blur'
-            wrapperProps={{
-              style: {
-                width: '100%',
-                height: '100%',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              },
-            }}
-            src={userImage}
+          <img
+            src={'/profile-img2.jpg'}
             alt='User image'
             className='w-[93%] h-[93%] rounded-full object-cover'
           />
@@ -63,16 +52,17 @@ const Hero = () => {
           className='mt-2 flex flex-col gap-10 items-center'
         >
           <h1 className='text-center text-xl px-5 dark:text-white/90 dark:font-[200] sm:px-16'>
-            {/* Hello,{' '}
-            <span className='font-semibold dark:font-normal'>
-              I'm Mahmud Abdulazeez
-            </span>
-            . I'm a{' '} */}
             <span className='font-semibold dark:text-green-300 text-3xl dark:font-normal'>
               Frontend developer
             </span>
-            <br />
-            Builds <i>beautiful, responsive and interactive</i> websites using{' '}
+            <br />I build <i>beautiful, responsive, and functional</i> web apps
+            that solves{' '}
+            <i>
+              <u>
+                <b>problems</b>
+              </u>
+            </i>{' '}
+            using{' '}
             <u>
               <b>ReactJS/NextJS</b>
             </u>
