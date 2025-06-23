@@ -18,16 +18,13 @@ const AboutMe = () => {
     >
       <Title title='About Me' />
       <p className='text-lg dark:text-white/70 dark:font-[200] sm:px-6 lg:px-0 '>
-        I specialize in building cutting-edge user interfaces using{' '}
+        I specialize in building web solutions using{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
-          React.js, Next.js, TypeScript, and Tailwind CSS.{' '}
+          React.js, Next.js, TypeScript, Tailwind CSS as my core stack.{' '}
         </span>
-        My strength lies in transforming design concepts into powerful,
-        user-friendly digital experiences that help businesses make a real
-        impact.
-        <br />
-        Through internships and collaborative team projects, I've deveoploed my
-        skills in building live products that not only{' '}
+        My strength lies in transforming designs into clean, responsive, and
+        functional web apps that help businesses achieve their business goals.
+        <br />I have worked with teams to build products that not only{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
           look great but perform exceptionally.
         </span>
@@ -43,48 +40,19 @@ const AboutMe = () => {
         </span>
         I'm committed to solving real-world challenges.
         <br />
-        <br />
-        My professional philosophy is simple:{' '}
+        <br />I believe{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
-          never stop learning.{' '}
+          learning never stops.{' '}
         </span>
-        I'm constantly exploring the{' '}
+        Hence why I'm constantly upskilling with the{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
-          latest frontend technologies,{' '}
+          latest frontend tools and technologies.{' '}
         </span>
-        pushing the boundaries of what's possible in web development. This
-        commitment allows me to bring{' '}
+        This commitment allows me to bring{' '}
         <span className='font-semibold dark:font-normal dark:text-white'>
           fresh, innovative solutions{' '}
         </span>
         to every project and teams I work with.
-        {/* I am a{' '}
-        <span className='font-semibold dark:font-normal dark:text-white'>
-          Frontend Developer,
-        </span>{' '}
-        proficient with ReactJs, NextJs, Typescript, and Tailwind for styling.
-        I'm a goal-oriented person, with good teamwork, ability to communicate
-        well, and also learn fast. These skills I got from working with people
-        on live products, internships, and work settings.
-        <br />I hold a bachelors degree in{' '}
-        <span className='font-semibold dark:font-normal dark:text-white'>
-          Metallurgical and Materials Engineering.
-        </span>
-        <br />
-        My <i>favorite part of programming</i> is the problem solving.
-        My core
-        stack is{' '}
-        <span className='font-semibold dark:font-normal dark:text-white'>
-          ReactJS and TypeScript
-        </span>
-        <br />
-        <br />
-        When I'm not coding, I enjoy reading books, watching movies, and
-        watching football. I also{' '}
-        <span className='font-semibold dark:font-normal dark:text-white'>
-          enjoy learning new things and staying up to date with new technologies
-        </span>
-        . */}
       </p>
     </motion.div>
   );
