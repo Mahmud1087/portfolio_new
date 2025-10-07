@@ -37,7 +37,7 @@ const Hero = () => {
           className='w-32 h-32 rounded-full bg-white flex justify-center items-center shadow-2xl shadow-black/70 dark:bg-gray-950/70 dark:shadow-black'
         >
           <img
-            src={'/profile-img2.jpg'}
+            src={'/IMG_5588.jpeg'}
             alt='User image'
             className='w-[93%] h-[93%] rounded-full object-cover'
           />
