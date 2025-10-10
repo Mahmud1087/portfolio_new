@@ -34,7 +34,7 @@ const Hero = () => {
           transition={{
             duration: 0.3,
           }}
-          className='w-32 h-32 rounded-full bg-white flex justify-center items-center shadow-2xl shadow-black/70 dark:bg-gray-950/70 dark:shadow-black'
+          className='w-32 h-32 md:w-44 md:h-44 rounded-full bg-white flex justify-center items-center shadow-2xl shadow-black/70 dark:bg-gray-950/70 dark:shadow-black'
         >
           <img
             src={'/IMG_5588.jpeg'}
