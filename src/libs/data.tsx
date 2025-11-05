@@ -28,32 +28,41 @@ export const experiences = [
     period: 'Nov 2024 – Present',
     description: (
       <span>
-        - Rebuilt dashboards leading to a 10% improvement in user engagement.{' '}
-        <br /> - Optimize web apps performance, achieving an increase in load
-        speed, enhancing overall user experience and SEO. <br /> - Collaborate
-        closely with backend developers to integrate APIs securely and
-        efficiently. <br /> - Actively contribute in team meetings, offering
-        insights and helping transform ideas into fully deployed features,
-        directly impacting user satisfaction
+        ✅ Resolved critical billing discrepancy issue affecting user accounts
+        by debugging complex business logic in payment calculation system,
+        resulting in 10% improvement in user retention and enhanced customer
+        satisfaction
+        <br /> ✅ Maintained 85%+ test coverage using Jest for critical user
+        flows, reducing production bugs by 60% and improving deployment
+        confidence. <br /> ✅ Implemented comprehensive state management
+        architecture using React Query for server state and Zustand for client
+        state, reducing API calls by 40% and improving data consistency across
+        dashboards. <br /> ✅ Collaborated with cross-functional teams including
+        designers, backend engineers, and product managers through weekly code
+        reviews and sprint planning sessions, ensuring alignment on technical
+        requirements and delivery timelines
       </span>
     ),
     icon: <BriefcaseBusiness size={16} className='text-white' />,
   },
   {
-    title: 'Frontend Developer Intern',
+    title: 'Frontend Developer',
     company: 'HNG Tech',
-    period: 'Feb 2025 – April 2025',
+    period: 'Feb 2025 – Present',
     description: (
       <span>
-        - Built an MVP ({' '}
-        <a href='https://gradific.com' className='text-blue-500 underline'>
-          Gradific
-        </a>{' '}
-        ), an AI grading app that allows educators spend less time grading and
-        more focus on teaching.
+        ✅ Building an AI grading tool that reduces educators’ grading time and
+        improves teaching productivity during early pilot testing.
         <br />
-        - Worked in a competitive and fast paced environment with daily
-        deliverables. <br />
+        ✅ Developed clean, high-performance UI screens with Next.js,
+        TypeScript, Tailwind, shadcn/ui, improving speed and usability across
+        key workflows
+        <br />
+        ✅ Built reusable UI components and frontend architecture that improved
+        team efficiency and ensured consistent product experience. <br />✅
+        Implemented React Query for optimized data fetching, resulting in
+        smoother grading interactions and fewer redundant API calls.
+        <br />
       </span>
     ),
     icon: <Monitor size={16} className='text-white' />,
